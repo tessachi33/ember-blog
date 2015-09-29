@@ -7,13 +7,21 @@ module.exports = function(app) {
       'posts': [
         {
           id: 1,
-          title: 'Bananas'
+          title: 'Bananas',
+          author: 1
         },
         {
           id: 2,
-          title: 'Apples'
+          title: 'Apples',
+          author: 1
+
         }
-      ]
+      ],
+      "authors": [{
+        id:1,
+        name: "Teresa",
+        posts: [1,2]
+      }]
     });
   });
 
