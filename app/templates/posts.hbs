@@ -1,9 +1,9 @@
 <h1>Posts</h1>
 
 <ul class="list-unstyled">
-  {{#each}}
+  {{#each model as |post|}}
   <li>
-    {{title}}
+    {{post.title}}
   </li>
   {{/each}}
 </ul>
