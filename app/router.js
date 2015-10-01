@@ -9,9 +9,8 @@ Router.map(function() {
   this.route('about');
   this.resource('posts');
   this.route('contact');
-  this.resource('post', function() {
-    this.resource('post', {path: 'post/:post_id'});
-
+  this.resource('posts', function() {
+    this.resource('post', { path:':post_id'})
   });
 });
 
